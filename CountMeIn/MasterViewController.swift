@@ -38,9 +38,18 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(sender: AnyObject) {
-        objects.insert(NSDate(), atIndex: 0)
+        /*objects.insert(NSDate(), atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)*/
+        let alert = UIAlertController(title: "Create a new Count", message: "Enter name", preferredStyle: .Alert)
+        let okAction = UIAlertAction(title: "Create", style: .Default) { (action) in
+            self.performSegueWithIdentifier("showDetails", sender: self)
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        alert.addTextFieldWithConfigurationHandler(nil)
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 
     // MARK: - Segues
