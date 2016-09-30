@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
 
-    var detailItem: AnyObject? {
+    var detailItem: Count? {
         didSet {
             // Update the view.
             self.configureView()
@@ -24,8 +24,8 @@ class DetailViewController: UIViewController {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
             if let label = self.detailDescriptionLabel {
-                navigationItem.title = detail.description
-                label.text = detail.description
+                navigationItem.title = detail.countName
+                label.text = String(detail.countValue)
             }
         }
     }

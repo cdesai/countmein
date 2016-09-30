@@ -9,8 +9,8 @@
 import Foundation
 
 class Count {
-    var countName: String
-    var countValue: Int32
+    var countName: String?
+    var countValue: Int
     
     init(name: String) {
         self.countName = name

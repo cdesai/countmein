@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8253DB271D9E6536007271CD /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253DB261D9E6536007271CD /* Count.swift */; };
+		8253DB291D9E6845007271CD /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8253DB281D9E6845007271CD /* Count.swift */; };
 		82E0B3E71D9CF49D00332B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E0B3E61D9CF49D00332B31 /* AppDelegate.swift */; };
 		82E0B3E91D9CF49D00332B31 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E0B3E81D9CF49D00332B31 /* MasterViewController.swift */; };
 		82E0B3EB1D9CF49D00332B31 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E0B3EA1D9CF49D00332B31 /* DetailViewController.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8253DB261D9E6536007271CD /* Count.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Count.swift; sourceTree = "<group>"; };
+		8253DB281D9E6845007271CD /* Count.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Count.swift; sourceTree = "<group>"; };
 		82E0B3E31D9CF49D00332B31 /* CountMeIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountMeIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E0B3E61D9CF49D00332B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82E0B3E81D9CF49D00332B31 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -61,11 +61,11 @@
 				82E0B3E61D9CF49D00332B31 /* AppDelegate.swift */,
 				82E0B3E81D9CF49D00332B31 /* MasterViewController.swift */,
 				82E0B3EA1D9CF49D00332B31 /* DetailViewController.swift */,
-				8253DB261D9E6536007271CD /* Count.swift */,
 				82E0B3EC1D9CF49D00332B31 /* Main.storyboard */,
 				82E0B3EF1D9CF49D00332B31 /* Assets.xcassets */,
 				82E0B3F11D9CF49D00332B31 /* LaunchScreen.storyboard */,
 				82E0B3F41D9CF49D00332B31 /* Info.plist */,
+				8253DB281D9E6845007271CD /* Count.swift */,
 			);
 			path = CountMeIn;
 			sourceTree = "<group>";
@@ -145,7 +145,7 @@
 				82E0B3EB1D9CF49D00332B31 /* DetailViewController.swift in Sources */,
 				82E0B3E91D9CF49D00332B31 /* MasterViewController.swift in Sources */,
 				82E0B3E71D9CF49D00332B31 /* AppDelegate.swift in Sources */,
-				8253DB271D9E6536007271CD /* Count.swift in Sources */,
+				8253DB291D9E6845007271CD /* Count.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

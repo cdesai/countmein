@@ -11,10 +11,7 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
-    var objects = [String]()
-    var countName: String?
-    
-
+    var objects = [Count]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,16 +37,14 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(sender: AnyObject) {
-        /*objects.insert(NSDate(), atIndex: 0)
-        let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)*/
         let alert = UIAlertController(title: "Create a new Count", message: "Enter name", preferredStyle: .Alert)
         let okAction = UIAlertAction(title: "Create", style: .Default) { (action) in
-            self.countName = alert.textFields![0].text
-            if (self.countName!.isEmpty) {
+            let currentCount = Count(name: alert.textFields![0].text!)
+            //self.countName = alert.textFields![0].text
+            if (currentCount.countName!.isEmpty) {
                 return
             }
-            self.objects.insert(self.countName!, atIndex: 0)
+            self.objects.insert(currentCount, atIndex: 0)
             let indexPath = NSIndexPath(forRow: 0, inSection: 0)
             self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
             //self.performSegueWithIdentifier("showDetails", sender: self)
@@ -89,7 +84,8 @@ class MasterViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
-        cell.textLabel!.text = objects[indexPath.row]
+        cell.textLabel!.text = objects[indexPath.row].countName
+        cell.detailTextLabel!.text = String(objects[indexPath.row].countValue)
         
         return cell
     }
