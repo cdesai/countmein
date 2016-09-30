@@ -13,6 +13,7 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var objects = [String]()
     var countName: String?
+    
 
 
     override func viewDidLoad() {
