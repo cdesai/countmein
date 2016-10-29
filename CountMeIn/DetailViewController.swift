@@ -12,7 +12,6 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
-
     var detailItem: Count? {
         didSet {
             // Update the view.
@@ -30,6 +29,20 @@ class DetailViewController: UIViewController {
         }
     }
 
+    @IBAction func increaseCount(sender: UIButton) {
+        detailItem?.countValue = (detailItem?.countValue)! + 1
+        detailDescriptionLabel.textColor = UIColor(red: 37/255, green: 162/255, blue: 78/255, alpha: 1.0)
+        self.configureView()
+    }
+    
+    @IBAction func decreaseCount(sender: UIButton) {
+        if(detailItem?.countValue > 0) {
+            detailItem?.countValue = (detailItem?.countValue)! - 1
+            detailDescriptionLabel.textColor = UIColor(red: 213/255, green: 29/255, blue: 36/255, alpha: 1.0)
+            self.configureView()
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -40,7 +53,6 @@ class DetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
