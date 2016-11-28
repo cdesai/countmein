@@ -42,6 +42,13 @@ class DetailViewController: UIViewController {
             self.configureView()
         }
     }
+    
+    @IBAction func resetCount(sender: UIButton) {
+        if(detailItem?.countValue > 0) {
+            detailItem?.countValue = 0
+            self.configureView()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
