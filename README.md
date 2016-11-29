@@ -8,4 +8,8 @@ This app demonstrates following basic iOS concepts for educational purpose.
 - IBOutlets/IBAction
 - Stack Views
 
+**Screenshots**
 
+<img src="https://github.com/cdesai/countmein/blob/Swift2.3/CountMeIn%20Screenshots/CountMeIn%20-%20List%20of%20Counters.png" width="350">
+<img src="https://github.com/cdesai/countmein/blob/Swift2.3/CountMeIn%20Screenshots/CountMeIn%20-%20Create%20a%20new%20Counter.png" width="350">
+<img src="https://github.com/cdesai/countmein/blob/Swift2.3/CountMeIn%20Screenshots/CountMeIn%20-%20Count%20Screen.png" width="350">
