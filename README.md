@@ -8,6 +8,10 @@ This app demonstrates following basic iOS concepts for educational purpose.
 - IBOutlets/IBAction
 - Stack Views
 
+**Requirements**
+- Swift 2.3
+- XCode 8
+
 **Screenshots**
 
 <img src="https://github.com/cdesai/countmein/blob/Swift2.3/CountMeIn%20Screenshots/CountMeIn%20-%20List%20of%20Counters.png" width="275">
