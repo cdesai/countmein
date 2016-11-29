@@ -37,18 +37,18 @@ class MasterViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // Get the name of the new Counter
     func insertNewObject(sender: AnyObject) {
         let alert = UIAlertController(title: "Create a new Count", message: "Enter name", preferredStyle: .Alert)
         let okAction = UIAlertAction(title: "Create", style: .Default) { (action) in
             let currentCount = Count(name: alert.textFields![0].text!)
-            //self.countName = alert.textFields![0].text
+
             if (currentCount.countName!.isEmpty) {
                 return
             }
             self.objects.insert(currentCount, atIndex: 0)
             let indexPath = NSIndexPath(forRow: 0, inSection: 0)
             self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-            //self.performSegueWithIdentifier("showDetails", sender: self)
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         

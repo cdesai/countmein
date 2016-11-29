@@ -61,11 +61,11 @@
 				82E0B3E61D9CF49D00332B31 /* AppDelegate.swift */,
 				82E0B3E81D9CF49D00332B31 /* MasterViewController.swift */,
 				82E0B3EA1D9CF49D00332B31 /* DetailViewController.swift */,
+				8253DB281D9E6845007271CD /* Count.swift */,
 				82E0B3EC1D9CF49D00332B31 /* Main.storyboard */,
 				82E0B3EF1D9CF49D00332B31 /* Assets.xcassets */,
 				82E0B3F11D9CF49D00332B31 /* LaunchScreen.storyboard */,
 				82E0B3F41D9CF49D00332B31 /* Info.plist */,
-				8253DB281D9E6845007271CD /* Count.swift */,
 			);
 			path = CountMeIn;
 			sourceTree = "<group>";

@@ -9,9 +9,12 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    // MARK: Outlets
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
+    // MARK: Variables
+    
+    
     var detailItem: Count? {
         didSet {
             // Update the view.
@@ -19,6 +22,12 @@ class DetailViewController: UIViewController {
         }
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        self.configureView()
+    }
+    
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
@@ -29,6 +38,8 @@ class DetailViewController: UIViewController {
         }
     }
 
+    // MARK: Actions
+    
     @IBAction func increaseCount(sender: UIButton) {
         detailItem?.countValue = (detailItem?.countValue)! + 1
         detailDescriptionLabel.textColor = UIColor(red: 37/255, green: 162/255, blue: 78/255, alpha: 1.0)
@@ -49,17 +60,5 @@ class DetailViewController: UIViewController {
             self.configureView()
         }
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.configureView()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
