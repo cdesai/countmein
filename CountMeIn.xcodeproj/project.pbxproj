@@ -103,7 +103,7 @@
 					82E0B3E21D9CF49D00332B31 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = FY8PBVAMLP;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -271,7 +271,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apphq.CountMeIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -284,7 +284,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apphq.CountMeIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

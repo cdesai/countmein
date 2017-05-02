@@ -7,6 +7,30 @@
 //
 
 import UIKit
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 class DetailViewController: UIViewController {
     // MARK: Outlets
@@ -40,13 +64,13 @@ class DetailViewController: UIViewController {
 
     // MARK: Actions
     
-    @IBAction func increaseCount(sender: UIButton) {
+    @IBAction func increaseCount(_ sender: UIButton) {
         detailItem?.countValue = (detailItem?.countValue)! + 1
         detailDescriptionLabel.textColor = UIColor(red: 37/255, green: 162/255, blue: 78/255, alpha: 1.0)
         self.configureView()
     }
     
-    @IBAction func decreaseCount(sender: UIButton) {
+    @IBAction func decreaseCount(_ sender: UIButton) {
         if(detailItem?.countValue > 0) {
             detailItem?.countValue = (detailItem?.countValue)! - 1
             detailDescriptionLabel.textColor = UIColor(red: 213/255, green: 29/255, blue: 36/255, alpha: 1.0)
@@ -54,7 +78,7 @@ class DetailViewController: UIViewController {
         }
     }
     
-    @IBAction func resetCount(sender: UIButton) {
+    @IBAction func resetCount(_ sender: UIButton) {
         if(detailItem?.countValue > 0) {
             detailItem?.countValue = 0
             self.configureView()
