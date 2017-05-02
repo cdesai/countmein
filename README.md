@@ -1,5 +1,5 @@
 # CountMeIn
-A simple iOS counter app built with Swift 2.3 and XCode 8 to demonstrate use of Master-Detail Template.
+A simple iOS counter app built with Swift 3 and XCode 8 to demonstrate use of Master-Detail Template.
 
 This app demonstrates following basic iOS concepts for educational purpose.
 
@@ -9,7 +9,7 @@ This app demonstrates following basic iOS concepts for educational purpose.
 - Stack Views
 
 **Requirements**
-- Swift 2.3
+- Swift 3
 - XCode 8
 
 **Screenshots**
